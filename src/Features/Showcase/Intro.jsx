@@ -16,7 +16,7 @@ const Intro = ({ registerSectionNode }) => {
         <div className="">
           <h3
             className="md:text-3xl text-2xl text-center lg:text-start font-bold
-            dark:text-lime-50"
+            dark:text-[#c4c7c5]"
           >
             Hi, I'm <span className="border-b-4 border-[#009688]">Sarah</span>
           </h3>
@@ -29,7 +29,7 @@ const Intro = ({ registerSectionNode }) => {
             animate={{ width: "auto" }}
             transition={{ duration: 5 }}
           >
-            <h1 className="text-lime-950 dark:text-lime-50">FRONTEND</h1>
+            <h1 className="text-lime-950 dark:text-[#c4c7c5]">FRONTEND</h1>
           </motion.div>
           <motion.div
             className="text-4xl md:text-6xl lg:text-[5.5rem] text-center lg:text-start
@@ -45,14 +45,22 @@ const Intro = ({ registerSectionNode }) => {
            text-center lg:text-start"
           >
             <p className=" md:block">
-              I turn <span className=" font-bold text-[#181a1c]">Ideas</span>{" "}
-              into <span className="font-bold text-[#181a1c]">Interactive</span>{" "}
+              I turn{" "}
+              <span className=" font-bold text-[#181a1c] dark:text-inherit">
+                Ideas
+              </span>{" "}
+              into{" "}
+              <span className="font-bold text-[#181a1c] dark:text-inherit">
+                Interactive
+              </span>{" "}
               experiences and
             </p>
 
             <p>
-              <span className="font-bold text-[#181a1c]">Build</span> modern
-              websites that feel as good as they look!
+              <span className="font-bold text-[#181a1c] dark:text-inherit">
+                Build
+              </span>{" "}
+              modern websites that feel as good as they look!
             </p>
           </div>
         </div>

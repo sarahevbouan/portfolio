@@ -33,7 +33,7 @@ const Title = ({ projectName, liveSite, githubLink, children, type }) => {
     >
       <h3
         className={`${type}
-       dark:text-lime-50 font-bold`}
+       dark:text-stone-50 font-bold`}
       >
         {projectName}
       </h3>
@@ -67,7 +67,7 @@ const Stack = ({ projectStack, children }) => {
         {projectStack.map((stack) => (
           <span
             key={stack}
-            className="bg-lime-950 text-lime-50 dark:bg-lime-50 dark:text-lime-950 p-2 rounded hover:font-bold hover:scale-105 cursor-pointer"
+            className="bg-stone-950 text-stone-50 dark:bg-[#c4c7c5] dark:text-stone-950 p-2 rounded hover:font-bold hover:scale-105 cursor-pointer"
           >
             {stack}
           </span>

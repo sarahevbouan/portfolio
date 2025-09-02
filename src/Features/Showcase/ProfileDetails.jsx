@@ -3,7 +3,7 @@ import Button from "../../ui/Button";
 import AnimatedStar from "../../ui/AnimatedStar";
 
 const ProfileDetails = () => {
-  const spanStyle = "font-bold text-[#181a1c]";
+  const spanStyle = "font-bold text-[#181a1c] dark:text-inherit";
   return (
     <div className="">
       <h3

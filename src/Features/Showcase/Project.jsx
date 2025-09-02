@@ -33,7 +33,7 @@ const Project = ({ project }) => {
       className="py-4 lg:pt-12 lg:pb-16
      dark:bg-stone-900
      border-b-2 dark:border-b-0 border-stone-300
-    text-stone-950  dark:text-stone-400
+      
      flex flex-col lg:flex-row gap-8 lg:items-center "
     >
       <div className="md:px-8 mt-0 flex-1/1 md:flex-3/7 md:py-4 lg:py-8 hover:opacity-90">
@@ -68,7 +68,7 @@ const Project = ({ project }) => {
         <ProjectTemp type="gap-8">
           <motion.div
             className="absolute top-8 left-0 w-full md:w-[60%] 
-            shadow-[0_25px_150px_-12px_rgb(0,0,0,0.25)] rounded-2xl hover:border-2
+            shadow-[0_25px_50px_-12px_rgb(0,0,0,0.25)] rounded-2xl hover:border-2
              hover:border-[#009688] hover:cursor-pointer"
             whileHover={{ scale: [0.9, 1] }}
             transition={{
@@ -86,7 +86,7 @@ const Project = ({ project }) => {
           </motion.div>
           <motion.div
             className="absolute top-0 left-[35%] hidden md:block w-[60%] 
-            shadow-[0_25px_150px_-12px_rgb(0,0,0,0.25)] hover:border-2 rounded-2xl
+            shadow-[0_25px_50px_-12px_rgb(0,0,0,0.25)] hover:border-2 rounded-2xl
              hover:border-[#009688] hover:cursor-pointer"
             whileHover={{ scale: [0.9, 1] }}
             transition={{

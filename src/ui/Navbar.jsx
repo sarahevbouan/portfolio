@@ -51,7 +51,7 @@ const Navbar = () => {
       <div
         className={`flex md:flex-7/8 
           pt-12 text-[16px]
-            bg-[#e8f5f4] dark:bg-stone-950 dark:text-lime-50
+            bg-[#e8f5f4] dark:bg-stone-950 dark:text-stone-50
             flex-col gap-2
             fixed w-[60vw] h-[100vh] top-0 right-0 ${
               showMenu
@@ -59,7 +59,7 @@ const Navbar = () => {
                 : "translate-x-[150vw] opacity-0 text-xl"
             }
              transition-transform duration-200
-            md:text-lime-950 dark:md:text-lime-50 md:justify-between md:translate-none md:opacity-100
+            md:text-lime-950 dark:md:text-stone-50 md:justify-between md:translate-none md:opacity-100
              md:static md:flex-row md:w-fit md:h-fit md:bg-inherit dark:md:bg-revert md:pt-0
         
         `}
@@ -67,7 +67,7 @@ const Navbar = () => {
         <motion.ul
           className="py-3 px-12 font-extrabold dark:font-normal
           gap-6 rounded-3xl flex 
-          flex-col dark:md:bg-lime-50 dark:md:text-stone-950 md:flex-row
+          flex-col dark:md:bg-stone-50 dark:md:text-stone-950 md:flex-row
         "
         >
           <span
