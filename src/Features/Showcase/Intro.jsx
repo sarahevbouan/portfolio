@@ -23,8 +23,8 @@ const Intro = ({ registerSectionNode }) => {
         </div>
         <div className="md:flex-4/5">
           <motion.div
-            className="text-4xl md:text-6xl lg:text-[5.5rem] font-black text-center lg:text-start
-             overflow-hidden"
+            className="text-4xl md:text-6xl lg:text-[5.5rem] font-[1000] text-center lg:text-start
+             overflow-hidden lowercase"
             initial={{ width: 0 }}
             animate={{ width: "auto" }}
             transition={{ duration: 5 }}
@@ -33,15 +33,15 @@ const Intro = ({ registerSectionNode }) => {
           </motion.div>
           <motion.div
             className="text-4xl md:text-6xl lg:text-[5.5rem] text-center lg:text-start
-             font-extrabold overflow-hidden ml-4 md:ml-15"
+             font-black overflow-hidden ml-4 md:ml-15 lowercase"
             initial={{ width: 0 }}
             animate={{ width: "auto" }}
-            transition={{ duration: 5, delay: 0.2 }}
+            transition={{ duration: 5, delay: 0.5 }}
           >
             <h1 className=" text-[#009688]">DEVELOPER</h1>
           </motion.div>
           <div
-            className="dark:text-white text-sm md:text-[20px] mt-4 lg:ml-25
+            className="dark:text-[#c4c7c5] text-[16px] md:text-[20px] mt-4 lg:ml-25
            text-center lg:text-start"
           >
             <p className=" md:block">

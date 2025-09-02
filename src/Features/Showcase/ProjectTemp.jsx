@@ -50,9 +50,9 @@ const Title = ({ projectName, liveSite, githubLink, children, type }) => {
   );
 };
 
-const Overview = ({ projectSummary, children, alignmentType }) => {
+const Overview = ({ projectSummary, children, type }) => {
   return (
-    <div className={alignmentType}>
+    <div className={type}>
       {children}
       <p>{projectSummary}</p>
     </div>

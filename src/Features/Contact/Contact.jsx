@@ -14,7 +14,9 @@ const Contact = ({ registerSectionNode }) => {
       <p className="text-4xl sm:text-6xl md:text-8xl mb-4 font-figtree font-medium">
         Have a project in mind?
       </p>
-      <p className="mb-8 text-[#181a1c]">Reach out at sarahevbouan@gmail.com</p>
+      <p className="mb-8 text-[#181a1c] dark:text-stone-50">
+        Reach out at sarahevbouan@gmail.com
+      </p>
       <Button>
         <AnimatedStar /> Let's talk <AnimatedStar />
       </Button>

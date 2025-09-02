@@ -57,10 +57,7 @@ const ProjectDetails = () => {
         <ProjectTemp.Stack projectStack={projectStack}>
           <h3 className="text-[18px] md:text-2xl font-bold mb-2">Tech Stack</h3>
         </ProjectTemp.Stack>
-        <ProjectTemp.Overview
-          projectSummary={projectDetails}
-          alignmentType="text-start"
-        >
+        <ProjectTemp.Overview projectSummary={projectDetails} type="text-start">
           <h3 className="text-[18px] md:text-2xl font-bold mb-2">
             Description
           </h3>

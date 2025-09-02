@@ -55,8 +55,8 @@ const Skills = () => {
       [&>*]:flex [&>*]:flex-col [&>*]:items-center [&>*]:gap-1 md:justify-start 
       [&>*]:w-[90%] sm:[&>*]:w-[40%] [&>*]:py-4 [&>*]:px-4
       [&>*]:rounded-2xl 
-      [&>*]:hover:bg-stone-950 [&>*]:hover:text-lime-50
-      dark:[&>*]:hover:bg-lime-50 dark:[&>*]:hover:text-stone-950
+      [&>*]:hover:bg-stone-950 [&>*]:hover:text-stone-50
+      dark:[&>*]:hover:bg-stone-50 dark:[&>*]:hover:text-stone-950
       [&>*>svg]:text-5xl [&>*>svg]:font-bold
       [&>*>p]:text-center [&>*>p]:text-[18px]"
       >

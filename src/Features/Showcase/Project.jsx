@@ -30,7 +30,7 @@ const Project = ({ project }) => {
   }, [activeProjectId]);
   return (
     <div
-      className="py-4 lg:pt-12 lg:pb-16
+      className="py-4 px-2 md:px-0 lg:pt-12 lg:pb-16
      dark:bg-stone-900
      border-b-2 dark:border-b-0 border-stone-300
       
@@ -50,7 +50,7 @@ const Project = ({ project }) => {
           </ProjectTemp.Title>
           <ProjectTemp.Overview
             projectSummary={projectSummary}
-            alignmentType="md:text-justify"
+            type="md:text-justify"
           />
           <ProjectTemp.Stack projectStack={projectStack} />
         </ProjectTemp>
