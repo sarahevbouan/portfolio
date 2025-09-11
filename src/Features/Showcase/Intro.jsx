@@ -53,10 +53,7 @@ const Intro = ({ registerSectionNode }) => {
               <span className="font-bold text-[#181a1c] dark:text-inherit">
                 Interactive
               </span>{" "}
-              experiences and
-            </p>
-
-            <p>
+              experiences and <br className="hidden md:block" />
               <span className="font-bold text-[#181a1c] dark:text-inherit">
                 Build
               </span>{" "}
