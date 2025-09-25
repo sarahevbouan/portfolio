@@ -29,7 +29,6 @@ const Navbar = () => {
         !dropdownRef.current.contains(e.target) &&
         !hambgRef.current.contains(e.target)
       ) {
-        console.log("yea");
         setShowMenu(false);
       }
     };
