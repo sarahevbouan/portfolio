@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "motion/react";
 import { IoMoon } from "react-icons/io5";
@@ -11,6 +11,8 @@ const Navbar = () => {
   const uiTheme = getStorage(localStorage, "darkTheme");
   const [darkTheme, setDarkTheme] = useState(uiTheme);
   const [showMenu, setShowMenu] = useState(false);
+  const dropdownRef = useRef();
+  const hambgRef = useRef();
 
   useEffect(() => {
     const body = document.querySelector("body");
@@ -20,6 +22,22 @@ const Navbar = () => {
   const toggleTheme = () => {
     setDarkTheme((theme) => !theme);
   };
+  useEffect(() => {
+    const handleClickEvent = (e) => {
+      if (
+        showMenu &&
+        !dropdownRef.current.contains(e.target) &&
+        !hambgRef.current.contains(e.target)
+      ) {
+        console.log("yea");
+        setShowMenu(false);
+      }
+    };
+    window.addEventListener("click", handleClickEvent);
+    return () => {
+      window.removeEventListener("click", handleClickEvent);
+    };
+  }, [showMenu]);
   return (
     <nav
       className={`w-dvw h-24 px-[5%]
@@ -37,6 +55,7 @@ const Navbar = () => {
         </h1>
 
         <svg
+          ref={hambgRef}
           xmlns="http://www.w3.org/2000/svg"
           height="25"
           width="25"
@@ -49,6 +68,7 @@ const Navbar = () => {
         </svg>
       </div>
       <div
+        ref={dropdownRef}
         className={`flex md:flex-7/8 
           pt-12 text-[16px]
             bg-[#e8f5f4] dark:bg-stone-950 dark:text-stone-50
