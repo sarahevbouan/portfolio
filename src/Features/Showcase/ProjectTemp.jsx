@@ -18,7 +18,7 @@ const Image = ({ projectName, projectImg, type, borderRad }) => {
       <img
         src={projectImg}
         alt={projectName}
-        className={`w-full h-full
+        className={`w-full aspect-1/1
          ${borderRad}`}
       />
     </div>

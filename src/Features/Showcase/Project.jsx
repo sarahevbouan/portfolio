@@ -30,11 +30,11 @@ const Project = ({ project }) => {
   }, [activeProjectId]);
   return (
     <div
-      className="py-4 px-2 md:px-0 lg:pt-12 lg:pb-16
+      className="pb-16 pt-4 md:py-4 px-2 md:px-0 lg:pt-12 lg:pb-16
      dark:bg-stone-900
      border-b-2 dark:border-b-0 border-stone-300
       
-     flex flex-col lg:flex-row gap-8 lg:items-center "
+     flex flex-col lg:flex-row gap-8 lg:items-center"
     >
       <div className="md:px-8 mt-0 flex-1/1 md:flex-3/7 md:py-4 lg:py-8 hover:opacity-90">
         <ProjectTemp type="gap-8">
@@ -55,7 +55,7 @@ const Project = ({ project }) => {
           <ProjectTemp.Stack projectStack={projectStack} />
         </ProjectTemp>
       </div>
-      <div className="flex-1/1 md:flex-4/7 h-full min-h-[500px] relative group">
+      <div className="flex-1/1 md:flex-4/7 h-full md:min-h-[500px] relative group">
         <div
           className="hidden group-hover:block z-10 backdrop-fliter backdrop-blur-md
          bg-stone-950 text-white py-2 px-2 border-2 border-lime-50 rounded-[50%] 
@@ -67,7 +67,7 @@ const Project = ({ project }) => {
         </div>
         <ProjectTemp type="gap-8">
           <motion.div
-            className="absolute top-8 left-0 w-full md:w-[60%] 
+            className="md:absolute top-8 left-0 w-full md:w-[60%] 
             shadow-[0_25px_50px_-12px_rgb(0,0,0,0.25)] rounded-2xl hover:border-2
              hover:border-[#009688] hover:cursor-pointer"
             whileHover={{ scale: [0.9, 1] }}
@@ -80,12 +80,12 @@ const Project = ({ project }) => {
             <ProjectTemp.Image
               projectName={projectName}
               projectImg={projectImg[0]}
-              type="w-[100%] h-[400px]"
+              type="w-[100%] h-fit"
               borderRad="rounded-2xl"
             />
           </motion.div>
           <motion.div
-            className="absolute top-0 left-[35%] hidden md:block w-[60%] 
+            className="md:absolute top-0 left-[35%] hidden md:block w-[60%] 
             shadow-[0_25px_50px_-12px_rgb(0,0,0,0.25)] hover:border-2 rounded-2xl
              hover:border-[#009688] hover:cursor-pointer"
             whileHover={{ scale: [0.9, 1] }}
@@ -98,7 +98,7 @@ const Project = ({ project }) => {
             <ProjectTemp.Image
               projectName={projectName}
               projectImg={projectImg[1]}
-              type="w-[100%] h-[400px]"
+              type="w-[100%] h-fit"
               borderRad="rounded-2xl"
             />
           </motion.div>
