@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
-import { motion } from "motion/react";
 import ActiveProjectProvider from "./store/ActiveProject";
 import Navbar from "./ui/Navbar";
 import Home from "./Pages/Home";
