@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { motion, spring } from "motion/react";
-import { LuSquareArrowOutUpRight } from "react-icons/lu";
 
 import { ActiveProjectContext } from "../../store/ActiveProject";
 import { FeaturedProjectsContext } from "../../store/FeaturedProjects";

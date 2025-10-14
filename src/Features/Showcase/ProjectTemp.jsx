@@ -12,14 +12,14 @@ const ProjectTemp = ({ children, type }) => {
   );
 };
 
-const Image = ({ projectName, projectImg, type, borderRad }) => {
+const Image = ({ projectName, projectImg, type, borderRad_aspectRatio }) => {
   return (
     <div className={type}>
       <img
         src={projectImg}
         alt={projectName}
-        className={`w-full aspect-1/1
-         ${borderRad}`}
+        className={`w-full 
+         ${borderRad_aspectRatio}`}
       />
     </div>
   );

@@ -81,7 +81,7 @@ const Project = ({ project }) => {
               projectName={projectName}
               projectImg={projectImg[0]}
               type="w-[100%] h-fit"
-              borderRad="rounded-2xl"
+              borderRad_aspectRatio="rounded-2xl aspect-1/1"
             />
           </motion.div>
           <motion.div
@@ -99,7 +99,7 @@ const Project = ({ project }) => {
               projectName={projectName}
               projectImg={projectImg[1]}
               type="w-[100%] h-fit"
-              borderRad="rounded-2xl"
+              borderRad_aspectRatio="rounded-2xl aspect-1/1"
             />
           </motion.div>
         </ProjectTemp>
